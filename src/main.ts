@@ -27,7 +27,7 @@ const engine = new ex.Engine({
     height: 800,
     displayMode: ex.DisplayMode.FitScreen
 });
-engine.debug.entity.showName = true;
+engine.debug.entity.showName = false;
 engine.backgroundColor = ex.Color.Black;
 engine.setAntialiasing(false);
 
