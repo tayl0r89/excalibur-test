@@ -14,10 +14,12 @@ export class Game extends ex.Scene {
         const fireworkTimer = new ex.Timer({
             fcn: () => {
                 const pos = random.integer(0, 1000)
-                engine.add(new Firework(pos))
+                const target = random.integer(200, 800)
+                const speed = random.integer(40, 160)
+                engine.add(new Firework(pos, target, speed))
             },
-            randomRange:[0, 2000],
-            interval: 2000,
+            randomRange:[0, 500],
+            interval: 500,
             repeats: true
         })
         
